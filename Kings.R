@@ -4,8 +4,6 @@ data_til_digital_metode <- data_til_digital_metode %>%
 data_til_digital_metode %>%
   ggplot(aes(x = midyear, y = duration)) + geom_point() +
   geom_smooth(mapping = aes(x = midyear, y = duration), method=lm) +
-  labs(title = "How long danish kings ruled over time",
-                                                                                                                                  x = "Year ",
-                                                                                                                                  y = "Year they ruled") + theme_bw() + theme(text = element_text(size = 14))
+  labs(title = "How long danish kings ruled over time", x = "Year ", y = "Year they ruled") + theme_bw() + theme(text = element_text(size = 14))
 
 
