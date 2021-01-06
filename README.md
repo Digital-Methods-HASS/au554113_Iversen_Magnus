@@ -1,12 +1,17 @@
 # au554113_Iversen_Magnus
-library(tidyverse)
+The Danish Royal Line 
 
-data_til_digital_metode <- data_til_digital_metode %>%
-  mutate(duration = End_date-Start_date, midyear = (End_date+Start_date)/2)
-  
-data_til_digital_metode %>%
-  ggplot(aes(x = midyear, y = duration)) + geom_point() + 
-  geom_smooth(mapping = aes(x = midyear, y = duration), method=lm) + 
-  labs(title = "How long danish kings ruled over time", x = "Year ", y = "Year they ruled") +
-  theme_bw() + theme(text = element_text(size = 14))
+Analysis 
+
+Purpose: I want to clarify if there is any correlation with how long a king ruled and at what time it was in history. Based on that, I also want to investigate whether life as kings was more dangerous in the Viking Age compared to other time periods in Denmark. 
+
+Authors 
+
+- Magnus Lindhardt Iversen 
+
+License: CC-BY-SA 4.0
+
+Data: 
+
+Software: R, version 4.0.3
 
